@@ -12,7 +12,7 @@ const Info = () => {
             <CardTitle>The Idea <i>(Beta)</i></CardTitle>
             <CardText>
             A simple space to just add a <mark>Thought/Poem</mark> or anything really, 
-            Its anonymous and very open to abuse 🔥. It can't be deleted or edited.   
+            Its anonymous and very open to abuse. It can't be deleted or edited.   
              <br/>
              Use any <mark>Language or Emoji</mark>
              We ask that you post anything that you want as long as it's true, make it short make it long,<mark>just fucking make it</mark>. 
