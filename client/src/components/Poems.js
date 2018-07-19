@@ -33,9 +33,11 @@ class Poems extends Component {
   renderPoems = (loading, erie) => {
     let template = null;
     const { poems } = this.props.poem;
-    console.log(loading);
-    console.log(erie)
     if (loading === true){
+      // console.log("Before")
+      // console.log(erie)
+      // console.log(this.state)
+      // this.setState({ hide: '' })
       template =  
         <div>
           <TransitionGroup>
@@ -44,7 +46,9 @@ class Poems extends Component {
         </div>
       return template;
     }
-    else if(erie.length < 1){
+    else if(erie.length === 0){
+      // console.log("trigger")
+      // console.log(erie);
       this.setState({ hide: '' })
       template =  
       <div>
@@ -60,12 +64,11 @@ class Poems extends Component {
       <TransitionGroup className="Poems">
               {poems.map(({_id, name, body, handle}) => (
                 <CSSTransition key={_id} timeout={1000} classNames="fade">
-                  <Card styel={{ marginBottom: "2rem" }}>
+                  <Card style={{ marginBottom: "2rem" }}>
                     <CardBody>
                     <CardTitle><b>{name}</b> {this.renderButton(handle)}</CardTitle>
                     <hr/>
                     <CardText>{body}</CardText>
-                    
                     </CardBody>
                   </Card>
                 </CSSTransition>
@@ -76,22 +79,18 @@ class Poems extends Component {
           return template;
     }
   }
-  // {this.renderButton()}
-  // componentWillReceiveProps(){
-  //   console.log("props");
-  //  this.setState({ hide: 'show' });
-  // }
+
   componentDidUpdate(){
-    console.log('componentDidUpdate')
+    // console.log('componentDidUpdate');
   }
   componentWillMount() {
-    console.log('componentWillMount')
+    // console.log('componentWillMount')
     this.props.getPoems();
   }
   componentDidMount() {
-    console.log('componentDidMount');
+    // console.log(this.template);
     // const { loading } = this.state;
-    setTimeout(() => this.setState({ hide: 'hide' }), 1500);
+    () => this.setState({ hide: 'hide' });
     // var element = document.getElementById("opens").className.add("hide");
 }
   onDeleteClick = (id) => {

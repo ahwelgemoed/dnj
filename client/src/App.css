@@ -53,6 +53,14 @@ body {
   padding-top: 2px;
   
 }
+.bottim{
+  border-top: 1px solid black;
+  padding-top: 15px
+}
+mark{
+  color: white !important;
+  background: black;
+}
 h3{
   font-family: 'Vollkorn', serif;
   text-align: left;
