@@ -11,6 +11,8 @@ import {
 } from 'reactstrap';
 import { connect } from 'react-redux';
 import { addPoem } from '../actions/poemActions';
+import Info from '../components/Info';
+import FontAwesome from 'react-fontawesome';
 
 class poemModal extends Component {
   state = {
@@ -45,37 +47,41 @@ class poemModal extends Component {
   render(){
     return(
       <div>
+      <Info/>
         <Button
+        // className='float-right'
         style={{ marginBottom: "2rem", background:"white", border: "1px solid black", color: "Black"}}
         onClick={this.toggle}>
-        Submit a Poem
+        <FontAwesome name="plus"/> Add Something
         </Button>
         <Modal
         isOpen={this.state.modal}
         toggle={this.toggle}
         >
           <ModalHeader toggle={this.toggle}>
-            <h3> Add Poem </h3>  
+            <h3>Add Poem | Thought</h3>  
           </ModalHeader>
           <ModalBody>
             <Form onSubmit={this.onSubmit}>
               <FormGroup>
-                <Label for="poem">Poem Name</Label>
+                <Label for="poem">Title</Label>
                 <Input
                 type="text"
                 name="name"
                 id="poem"
                 placeholder="Title"
+                required
                 onChange={this.onChange}
                 ></Input>
               </FormGroup>
               <FormGroup>
-                <Label for="body">Poem</Label>
+                <Label for="body">Poem | Thought</Label>
                 <Input
                 type="textarea"
                 name="body"
                 id="body"
-                placeholder="Poem..."
+                required
+                placeholder="Poem | Thought..."
                 onChange={this.onChange}
                 ></Input>
             </FormGroup>
@@ -85,7 +91,7 @@ class poemModal extends Component {
               type="text"
               name="handle"
               id="handle"
-              placeholder="Instagram Handle"
+              placeholder="Instagram Handle (Optional)"
               onChange={this.onChange}
               ></Input>
           </FormGroup>
@@ -97,7 +103,6 @@ class poemModal extends Component {
           </Button>
             </Form>
           </ModalBody>
-        
         </Modal>
       </div>
     );

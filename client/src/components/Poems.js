@@ -1,64 +1,107 @@
 import React, { Component } from 'react';
 import {Container} from 'reactstrap';
-import { Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button } from 'reactstrap';
+import { Card, CardText, CardBody,
+  CardTitle, Button } from 'reactstrap';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { connect } from "react-redux";
 import { getPoems , deletePoem} from '../actions/poemActions';
 import PropTypes from 'prop-types';
+import FontAwesome from 'react-fontawesome';
 
 
 class Poems extends Component {
 
-  renderPoems = (loading) => {
+  state = {
+    hide:''
+  }
+
+  renderButton(handle) {
+
+    if(handle) {
+      return (
+        <Button
+        style={{background:"white", border: "none", color: "Black"}}
+        // className="float-right        size="sm"
+        href={`http://www.instagram.com/${handle}`}
+        target="_blank"
+        // isHandle={hanhle}
+        > - <FontAwesome name="instagram"/> {handle}</Button>
+      );
+    }
+  }
+
+  renderPoems = (loading, erie) => {
     let template = null;
     const { poems } = this.props.poem;
-    console.log(this.props.poem.loading)
-
-    if (loading === true) {
-      template =  <div>
-      <TransitionGroup>
-        <div class="lds-heart"><div></div></div>
-      </TransitionGroup>
+    console.log(loading);
+    console.log(erie)
+    if (loading === true){
+      template =  
+        <div>
+          <TransitionGroup>
+            <div className={'lds-ellipsis' + this.state.hide}><div></div><div></div><div></div><div></div></div>
+          </TransitionGroup>
+        </div>
+      return template;
+    }
+    else if(erie.length < 1){
+      this.setState({ hide: '' })
+      template =  
+      <div>
+        <TransitionGroup>
+          <div className={'lds-ellipsis' + this.state.hide}><div></div><div></div><div></div><div></div></div>
+        </TransitionGroup>
       </div>
-      return template
-    }else{
-      template =  <div>
-            <TransitionGroup className="Poems">
+
+      return template;
+
+    } else{
+      template =
+      <TransitionGroup className="Poems">
               {poems.map(({_id, name, body, handle}) => (
                 <CSSTransition key={_id} timeout={1000} classNames="fade">
                   <Card styel={{ marginBottom: "2rem" }}>
                     <CardBody>
-                    <CardTitle>{name}</CardTitle>
+                    <CardTitle><b>{name}</b> {this.renderButton(handle)}</CardTitle>
                     <hr/>
                     <CardText>{body}</CardText>
-                    <Button
-                    style={{background:"white", border: "1px solid black", color: "Black"}}
-                    className="float-right"
-                    size="sm"
-                    href={`http://www.instagram.com/${handle}`}
-                    target="_blank"
-                    >Instagram</Button>
+                    
                     </CardBody>
                   </Card>
                 </CSSTransition>
               ))}
-            </TransitionGroup>
-          </div>
-          return template
+              <div className="lds-heart"><div></div></div>
+      </TransitionGroup>
+          
+          return template;
     }
   }
-  componentDidMount() {
-    
+  // {this.renderButton()}
+  // componentWillReceiveProps(){
+  //   console.log("props");
+  //  this.setState({ hide: 'show' });
+  // }
+  componentDidUpdate(){
+    console.log('componentDidUpdate')
+  }
+  componentWillMount() {
+    console.log('componentWillMount')
     this.props.getPoems();
   }
+  componentDidMount() {
+    console.log('componentDidMount');
+    // const { loading } = this.state;
+    setTimeout(() => this.setState({ hide: 'hide' }), 1500);
+    // var element = document.getElementById("opens").className.add("hide");
+}
   onDeleteClick = (id) => {
     this.props.deletePoem(id);
   }
   render() { 
+    // console.log(this.props.poem.poems)
     return (
       <Container>
-      {this.renderPoems(this.props.poem.loading)}
+      {this.renderPoems(this.props.poem.loading, this.props.poem.poems)}
       </Container>
     )
   }

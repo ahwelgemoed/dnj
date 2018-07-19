@@ -14,6 +14,7 @@ class App extends Component {
       <Provider store={store}>
         <div className="App">
           <AppNavbar/>
+          
           <PoemModal/>
           <Poems/>
         </div>

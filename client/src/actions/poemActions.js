@@ -9,7 +9,9 @@ export const getPoems = () => dispatch => {
       dispatch({
         type: GET_POEMS,
         payload: res.data
-      }))
+      })).catch(function (error) {
+      console.log(error.response);
+ });
 
 }
 export const addPoem = (poem) => dispatch => {

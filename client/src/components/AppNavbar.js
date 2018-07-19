@@ -1,11 +1,7 @@
 import React from 'react';
-import { Collapse,
+import {
   Navbar,
-  NavbarToggler,
   NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
   Container
  } from 'reactstrap';
 
@@ -27,7 +23,7 @@ class AppNavbar extends React.Component{
           expand="lg" 
           className="mb-5">
             <Container>
-              <NavbarBrand className='disnetjy' href="/"><b><i>"Dis net Jy"</i></b> - <h6>NP Van Wyk Louw</h6></NavbarBrand>
+              <NavbarBrand  href="/"><i className='disnetjy'>"DIS NET JY"</i><b><h6 className="subb">- NP Van Wyk Louw</h6></b></NavbarBrand>
             </Container>
         </Navbar>
       </div>

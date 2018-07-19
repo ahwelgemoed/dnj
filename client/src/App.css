@@ -37,24 +37,41 @@ body {
 
 }
 .disnetjy{
-  font-family: 'Playfair Display', serif;
-  font-weight: 900 !important;
+  font-family: 'Lekton', sans-serif;
+  /* font-weight: 900 !important; */
   color: black !important;
-  color: white;
+  font-size: 25px;
+  line-height: 15px;
+  
+
+}
+.subb{
+  font-family: 'Lekton', sans-serif;
+  font-weight: 900 !important;
+  color: white !important;
+  background: black;
+  padding-top: 2px;
+  
 }
 h3{
-  font-family: 'Playfair Display', serif;
+  font-family: 'Vollkorn', serif;
   text-align: left;
   margin-left: 15px;
   padding-top: 5px;
 }
 p{
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Vollkorn', serif;
   text-align: left;
   margin-left: 15px;
   padding-top: 5px;
   white-space: pre-line;
 }
+.card-title{
+  font-family: 'Vollkorn', serif;
+  font-weight: 700;
+  text-align: left
+}
+
 .card {
   margin-bottom: 2rem;
 }
@@ -119,4 +136,66 @@ button{
   /* background: #999999; */
   /* color: white; */
   border-bottom: 1px solid rgb(161, 161, 161)
+}
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 27px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: rgb(0, 0, 0);
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 6px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 6px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 26px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 45px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(19px, 0);
+  }
+}
+.hide{
+  display: none
+}
+.show{
+  display: inline;
 }
