@@ -65,7 +65,7 @@ class poemModal extends Component {
                 type="text"
                 name="name"
                 id="poem"
-                placeholder="Poem Name..."
+                placeholder="Title"
                 onChange={this.onChange}
                 ></Input>
               </FormGroup>
