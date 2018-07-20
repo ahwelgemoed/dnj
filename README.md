@@ -14,4 +14,4 @@ One can add a thought/poem and post it. It's anonymous and just there.
 
 A Small App written in the **MERN** Stack.
 
-![]()
+![Test](https://github.com/ahwelgemoed/thoughtsandpoetry/tree/master/Untitled.gif)
