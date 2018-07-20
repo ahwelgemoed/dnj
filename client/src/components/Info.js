@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container} from 'reactstrap';
 import { Card, CardText, CardBody,
-  CardTitle,} from 'reactstrap';
+  CardTitle} from 'reactstrap';
 
 
 const Info = () => {
@@ -21,6 +21,7 @@ const Info = () => {
              <div className="float-right bottim">Made with ❤️ in 🇿🇦</div>
             </CardText>
           </CardBody>
+
         </Card>
       </Container>
     </div>

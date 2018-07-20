@@ -1,6 +1,6 @@
 
 body {
-  background: #fff;
+  background: #fefefe;;
   text-align: center;
   width: 100vw;
 }
@@ -82,6 +82,7 @@ p{
 
 .card {
   margin-bottom: 2rem;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
 }
 .lds-heart {
   display: inline-block;
@@ -138,7 +139,8 @@ p{
   }
 }
 button{
-  background: black
+  background: #fefefe;
+  font-family: 'Vollkorn', serif;
 }
 .navbar{
   /* background: #999999; */
