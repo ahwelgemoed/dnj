@@ -15,7 +15,7 @@ const Info = () => {
             <p>Use any <mark>Language or Emoji</mark></p>
             <p>We ask that you post anything you want as long as it's true, make it short make it long, just <mark>fucking</mark> make it. 
             </p>
-            <p>You can add your <mark>Instagram</mark> handle if you want be found, or just leave it blank.</p>
+            <p>You can add your <mark>Instagram</mark> handle if you want be found, or leave it blank.</p>
              <br/>
              <div className="float-right bottim">Made with ❤️ in 🇿🇦</div>
             </CardText>
