@@ -3,6 +3,7 @@ import {Container} from 'reactstrap';
 import { Card, CardText, CardBody,
   CardTitle,} from 'reactstrap';
 
+
 const Info = () => {
   return (
     <div>
