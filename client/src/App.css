@@ -1,10 +1,13 @@
 
 body {
-  background: #fefefe;;
+  background: white;;
   text-align: center;
   width: 100vw;
 }
-
+*::selection {
+  background: black; 
+  color: white;
+}
 /* .card {
   flex-wrap: wrap;
   background: #fff;
