@@ -2,6 +2,7 @@ import React from 'react';
 import {Container} from 'reactstrap';
 import { Card, CardText, CardBody,
   CardTitle} from 'reactstrap';
+import FontAwesome from 'react-fontawesome';
 
 
 const Info = () => {
@@ -18,7 +19,7 @@ const Info = () => {
             </p>
             <p>You can add your <mark>Instagram</mark> handle if you want be found, or leave it blank.</p>
              <br/>
-             <div className="float-right bottim">Made with ❤️ in 🇿🇦</div>
+             <div className="float-right bottim">Made with <FontAwesome name="heart"/></div>
             </CardText>
           </CardBody>
 

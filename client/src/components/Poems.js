@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Container} from 'reactstrap';
-import { Card, CardText, CardBody,
+import { Card,CardLink, CardText, CardBody,
   CardTitle, Button } from 'reactstrap';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { connect } from "react-redux";
@@ -64,11 +64,18 @@ class Poems extends Component {
       <TransitionGroup className="Poems">
               {poems.map(({_id, name, body, handle}) => (
                 <CSSTransition key={_id} timeout={1000} classNames="fade">
-                  <Card style={{ marginBottom: "2rem" }}>
+                  <Card 
+                  className='cards'
+                  style={{ marginBottom: "2rem" }}>
                     <CardBody>
                     <CardTitle><b>{name}</b> {this.renderButton(handle)}</CardTitle>
                     <hr/>
                     <CardText>{body}</CardText>
+                    <CardLink
+                    className="float-right"
+                    href={`mailto:disnetjy@gmail.com?Subject=REPORT%20ABUSE 🙅&body=ID : ${_id} Title : ${name} Body : ${body}`}
+                    target="_top"
+                    >Report</CardLink>
                     </CardBody>
                   </Card>
                 </CSSTransition>

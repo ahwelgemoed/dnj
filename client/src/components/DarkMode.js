@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import {
-  Button
- } from 'reactstrap';
+import { Button } from 'reactstrap';
 
 class DarkMode extends Component {  
   constructor(props) {  
@@ -25,11 +23,12 @@ class DarkMode extends Component {
   render() {
     return (  
       <div>
-        <Button 
-        style={{ background:"white", border: "1px solid black", color: "Black"}}
+        <a 
+        className='nav-link'
+        style={{ background:"white", border: "none"}}
         aria-pressed={this.isActive()} onClick={this.toggle}>
           <span aria-hidden="true">{this.isActive() ? 'Dark' : 'Light'}</span>
-        </Button>
+        </a>
         <style media={this.isActive() ? 'screen' : 'none'}>
           {this.css}
         </style>

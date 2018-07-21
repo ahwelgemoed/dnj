@@ -91,7 +91,7 @@ class poemModal extends Component {
               type="text"
               name="handle"
               id="handle"
-              placeholder="Instagram Handle (Optional)"
+              placeholder="Instagram Handle without @ (Optional)"
               onChange={this.onChange}
               ></Input>
           </FormGroup>
