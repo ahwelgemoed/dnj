@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Button } from 'reactstrap';
+import FontAwesome from 'react-fontawesome';
 
 class DarkMode extends Component {  
   constructor(props) {  
@@ -23,12 +24,12 @@ class DarkMode extends Component {
   render() {
     return (  
       <div>
-        <a 
-        className='nav-link'
-        style={{ background:"white", border: "none"}}
+        <Button
+        // className='nav-link'
+        style={{ marginBottom: "2rem", background:"white", border: "1px solid black", color: "Black"}}
         aria-pressed={this.isActive()} onClick={this.toggle}>
-          <span aria-hidden="true">{this.isActive() ? 'Dark' : 'Light'}</span>
-        </a>
+          <span aria-hidden="true">{this.isActive() ? <span className='fas fa-moon'> Dark</span> : <span className='fas fa-sun'> Light</span>}</span>
+        </Button>
         <style media={this.isActive() ? 'screen' : 'none'}>
           {this.css}
         </style>

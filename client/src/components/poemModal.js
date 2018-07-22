@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {
+  Container,
   Button,
   Modal,
   ModalHeader,
@@ -13,6 +14,7 @@ import { connect } from 'react-redux';
 import { addPoem } from '../actions/poemActions';
 import Info from '../components/Info';
 import FontAwesome from 'react-fontawesome';
+import DarkMode from '../components/DarkMode';
 
 class poemModal extends Component {
   state = {
@@ -48,12 +50,15 @@ class poemModal extends Component {
     return(
       <div>
       <Info/>
+      <Container className="spc">
         <Button
         // className='float-right'
-        style={{ marginBottom: "2rem", background:"white", border: "1px solid black", color: "Black"}}
+        style={{ marginBottom: "2rem", background:"black", border: "1px solid black", color: "white"}}
         onClick={this.toggle}>
-        <FontAwesome name="plus"/> Add Something
+        <FontAwesome name="pen-nib"/> Post
         </Button>
+        <DarkMode/>
+        </Container>
         <Modal
         isOpen={this.state.modal}
         toggle={this.toggle}

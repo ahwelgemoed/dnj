@@ -5,23 +5,23 @@ const Terms = () => {
   return (
     <div>
     <Container>
-    <h1>Terms and Conditions for Disnetjy.com</h1>
+    <h2>Terms and Conditions for "disnetjy.com"</h2>
 
-    <h2>Introduction</h2> 
+    <h4>Introduction</h4> 
       
-    <p>These Website Standard Terms and Conditions written on this webpage shall manage your use of our website, Disnetjy.com accessible at www.disnetjy.com.</p>
+    <p>These Website Standard Terms and Conditions written on this webpage shall manage your use of our website, "disnetjy.com" accessible at www."disnetjy.com".</p>
     
     <p>These Terms will be applied fully and affect to your use of this Website. By using this Website, you agreed to accept all terms and conditions written in here. You must not use this Website if you disagree with any of these Website Standard Terms and Conditions.</p>
     
     <p>Minors or people below 18 years old are not allowed to use this Website.</p>
     
-    <h2>Intellectual Property Rights</h2>
+    <h4>Intellectual Property Rights</h4>
     
-    <p>Other than the content you own, under these Terms, Disnetjy.com and/or its licensors own all the intellectual property rights and materials contained in this Website.</p>
+    <p>Other than the content you own, under these Terms, "disnetjy.com" and/or its licensors own all the intellectual property rights and materials contained in this Website.</p>
     
     <p>You are granted limited license only for purposes of viewing the material contained on this Website.</p>
     
-    <h2>Restrictions</h2>
+    <h4>Restrictions</h4>
     
     <p>You are specifically restricted from all of the following:</p>
     
@@ -36,45 +36,45 @@ const Terms = () => {
         <li>using this Website to engage in any advertising or marketing.</li>
     </ul>
     
-    <p>Certain areas of this Website are restricted from being access by you and Disnetjy.com may further restrict access by you to any areas of this Website, at any time, in absolute discretion. Any user ID and password you may have for this Website are confidential and you must maintain confidentiality as well.</p>
+    <p>Certain areas of this Website are restricted from being access by you and "disnetjy.com" may further restrict access by you to any areas of this Website, at any time, in absolute discretion. Any user ID and password you may have for this Website are confidential and you must maintain confidentiality as well.</p>
     
-    <h2>Your Content</h2>
+    <h4>Your Content</h4>
     
-    <p>In these Website Standard Terms and Conditions, "Your Content" shall mean any audio, video text, images or other material you choose to display on this Website. By displaying Your Content, you grant Disnetjy.com a non-exclusive, worldwide irrevocable, sub licensable license to use, reproduce, adapt, publish, translate and distribute it in any and all media.</p>
+    <p>In these Website Standard Terms and Conditions, "Your Content" shall mean any audio, video text, images or other material you choose to display on this Website. By displaying Your Content, you grant "disnetjy.com" a non-exclusive, worldwide irrevocable, sub licensable license to use, reproduce, adapt, publish, translate and distribute it in any and all media.</p>
     
-    <p>Your Content must be your own and must not be invading any third-party’s rights. Disnetjy.com reserves the right to remove any of Your Content from this Website at any time without notice.</p>
+    <p>Your Content must be your own and must not be invading any third-party’s rights. "disnetjy.com" reserves the right to remove any of Your Content from this Website at any time without notice.</p>
     
-    <h2>No warranties</h2>
+    <h4>No warranties</h4>
     
-    <p>This Website is provided "as is," with all faults, and Disnetjy.com express no representations or warranties, of any kind related to this Website or the materials contained on this Website. Also, nothing contained on this Website shall be interpreted as advising you.</p>
+    <p>This Website is provided "as is," with all faults, and "disnetjy.com" express no representations or warranties, of any kind related to this Website or the materials contained on this Website. Also, nothing contained on this Website shall be interpreted as advising you.</p>
     
-    <h2>Limitation of liability</h2>
+    <h4>Limitation of liability</h4>
     
-    <p>In no event shall Disnetjy.com, nor any of its officers, directors and employees, shall be held liable for anything arising out of or in any way connected with your use of this Website whether such liability is under contract.  Disnetjy.com, including its officers, directors and employees shall not be held liable for any indirect, consequential or special liability arising out of or in any way related to your use of this Website.</p>
+    <p>In no event shall "disnetjy.com", nor any of its officers, directors and employees, shall be held liable for anything arising out of or in any way connected with your use of this Website whether such liability is under contract.  "disnetjy.com", including its officers, directors and employees shall not be held liable for any indirect, consequential or special liability arising out of or in any way related to your use of this Website.</p>
     
-    <h2>Indemnification</h2>
+    <h4>Indemnification</h4>
     
-    <p>You hereby indemnify to the fullest extent Disnetjy.com from and against any and/or all liabilities, costs, demands, causes of action, damages and expenses arising in any way related to your breach of any of the provisions of these Terms.</p>
+    <p>You hereby indemnify to the fullest extent "disnetjy.com" from and against any and/or all liabilities, costs, demands, causes of action, damages and expenses arising in any way related to your breach of any of the provisions of these Terms.</p>
     
-    <h2>Severability</h2>
+    <h4>Severability</h4>
     
     <p>If any provision of these Terms is found to be invalid under any applicable law, such provisions shall be deleted without affecting the remaining provisions herein.</p>
     
-    <h2>Variation of Terms</h2>
+    <h4>Variation of Terms</h4>
     
-    <p>Disnetjy.com is permitted to revise these Terms at any time as it sees fit, and by using this Website you are expected to review these Terms on a regular basis.</p>
+    <p>"disnetjy.com" is permitted to revise these Terms at any time as it sees fit, and by using this Website you are expected to review these Terms on a regular basis.</p>
     
-    <h2>Assignment</h2>
+    <h4>Assignment</h4>
     
-    <p>The Disnetjy.com is allowed to assign, transfer, and subcontract its rights and/or obligations under these Terms without any notification. However, you are not allowed to assign, transfer, or subcontract any of your rights and/or obligations under these Terms.</p>
+    <p>The "disnetjy.com" is allowed to assign, transfer, and subcontract its rights and/or obligations under these Terms without any notification. However, you are not allowed to assign, transfer, or subcontract any of your rights and/or obligations under these Terms.</p>
     
-    <h2>Entire Agreement</h2>
+    <h4>Entire Agreement</h4>
         
-    <p>These Terms constitute the entire agreement between Disnetjy.com and you in relation to your use of this Website, and supersede all prior agreements and understandings.</p>
+    <p>These Terms constitute the entire agreement between "disnetjy.com" and you in relation to your use of this Website, and supersede all prior agreements and understandings.</p>
     
-    <h2>Governing Law & Jurisdiction</h2>
+    <h4>Governing Law & Jurisdiction</h4>
     
-    <p>These Terms will be governed by and interpreted in accordance with the laws of the State of za, and you submit to the non-exclusive jurisdiction of the state and federal courts located in za for the resolution of any disputes.</p>
+    <p>These Terms will be governed by and interpreted in accordance with the laws of the State of South Africa (South African Bill of Rights), and you submit to the non-exclusive jurisdiction of the state and federal courts located in South Africa for the resolution of any disputes.</p>
     </Container>
     </div>
   );

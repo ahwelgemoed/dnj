@@ -155,11 +155,15 @@ button{
   border-bottom: 1px solid rgb(161, 161, 161)
 }
 .nav-link{
-  padding: 0;
+  /* padding: 0; */
   padding-bottom: 5px;
-  font-size: 14px;
+  font-size: 16px;
   cursor: pointer;
+  font-family: 'Lekton', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
 }
+
 
 .lds-ellipsis {
   display: inline-block;
@@ -233,4 +237,45 @@ form{
 }
 #body{
   height: 30vh;
+}
+h1, h2, h3, h4, h5{
+  font-family: 'Vollkorn', serif;
+}
+.navbar-toggler{
+  border: none
+}
+.bgf{
+  font-size: 24px;
+}
+.mylink{
+  font-size: 2em;
+  margin-left: 0.5em
+}
+.bott{
+  font-family: 'Vollkorn', serif;
+  font-size: 14px;
+  color: lightgray;
+  border-top: 1px solid lightgray;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.active {
+  color: green;
+}
+
+.spc{
+  display: flex;
+    justify-content: space-evenly;
+}
+.fas{
+  font-weight: 300 !important;
+}
+.fa-pen-nib{
+  font-weight: 600;
+}
+
+.nav-link-acc{
+  font-weight: 600;
+  background: black;
+  color: white !important;
 }

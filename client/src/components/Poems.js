@@ -25,7 +25,7 @@ class Poems extends Component {
         href={`http://www.instagram.com/${handle}`}
         target="_blank"
         // isHandle={hanhle}
-        > - <FontAwesome name="instagram"/> {handle}</Button>
+        > - <span className='fab fa-instagram'> {handle}</span> </Button>
       );
     }
   }
@@ -73,14 +73,14 @@ class Poems extends Component {
                     <CardText>{body}</CardText>
                     <CardLink
                     className="float-right"
-                    href={`mailto:disnetjy@gmail.com?Subject=REPORT%20ABUSE 🙅&body=ID : ${_id} Title : ${name} Body : ${body}`}
+                    href={`mailto:disnetjy@gmail.com?Subject=REPORT%20ABUSE 🙅 (We Keep You Save)&body=ID : ${_id} Title : ${name} Body : ${body}`}
                     target="_top"
                     >Report</CardLink>
                     </CardBody>
                   </Card>
                 </CSSTransition>
               ))}
-              <div className="lds-heart"><div></div></div>
+             
       </TransitionGroup>
           
           return template;

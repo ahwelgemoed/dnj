@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const poems = require('./routes/api/poems');
 const path = require('path');
+const nodemailer = require('nodemailer')
 
 
 //Initialize Express

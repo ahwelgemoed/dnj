@@ -1,20 +1,12 @@
 import React from 'react';
 import Info from '../components/Info';
-import {
-  Button,
-  Modal,
-  ModalHeader,
-  ModalBody,
-  Form,
-  FormGroup,
-  Label,
-  Input
-} from 'reactstrap';
+import Why from "../components/why"
+
 
 const What = () => {
   return (
     <div>
-    <Info/>
+    <Why/>
     </div>
   );
 };

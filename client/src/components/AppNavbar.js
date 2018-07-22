@@ -1,8 +1,9 @@
 import React from 'react';
 import { Container,
-  Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink 
+  Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, 
  } from 'reactstrap';
- import DarkMode from './DarkMode';
+
+ import {NavLink} from 'react-router-dom';
 
 class AppNavbar extends React.Component{
   state = {
@@ -26,21 +27,20 @@ class AppNavbar extends React.Component{
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
             <NavItem>
-            <NavLink href='what'>
-              What?
+            <NavLink exact to='/' activeClassName='nav-link-acc' className='nav-link'>
+              Home
             </NavLink>
           </NavItem>
-              <NavItem>
-                <NavLink>
-                  <DarkMode/>
-                </NavLink>
-              </NavItem>
-              <NavItem>
-              <NavLink href='terms'>
-                T&C
-              </NavLink>
-            </NavItem>
-
+            <NavItem>
+            <NavLink to='/www' activeClassName='nav-link-acc' className='nav-link'>
+              W&W&W
+            </NavLink>
+          </NavItem>
+          <NavItem>
+          <NavLink to='/tandc' activeClassName='nav-link-acc' className='nav-link'>
+            T&C
+          </NavLink>
+        </NavItem>
             </Nav>
           </Collapse>
         </Container>
