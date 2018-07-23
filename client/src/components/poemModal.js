@@ -103,7 +103,7 @@ class poemModal extends Component {
           <Button
           style={{marginTop: '2rem', background:"white", border: "1px solid black", color: "Black"}}
           >
-          Submit Poem
+          Submit
           </Button>
             </Form>
           </ModalBody>

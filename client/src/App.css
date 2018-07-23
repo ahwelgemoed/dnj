@@ -279,3 +279,10 @@ h1, h2, h3, h4, h5{
   background: black;
   color: white !important;
 }
+ul li {
+  font-family: 'Vollkorn', serif;
+  text-align: left;
+}
+.btn{
+  font-family: 'Vollkorn', serif;
+}
