@@ -3,6 +3,7 @@ import {Container} from 'reactstrap';
 import { Card, CardText, CardBody,
   CardTitle,CardLink} from 'reactstrap';
 import FontAwesome from 'react-fontawesome';
+import Markdown from 'markdown-to-jsx';
 
 const why = () => {
   return (
@@ -31,6 +32,10 @@ const why = () => {
           </p>
           <p>You can add your Instagram handle if you want be found, or leave it blank.</p>
            <br/>
+           <h6>Basic Markdown is Supported</h6>
+           <ul>_Italics_  - <Markdown>_Italics_</Markdown></ul>
+           <ul>**Bold**  - <Markdown>**Bold**</Markdown></ul>
+           <ul>~~Strikethrough~~  - <Markdown>~~Strikethrough~~</Markdown></ul>
           </CardText>
         </CardBody>
       </Card>

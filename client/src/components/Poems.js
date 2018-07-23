@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Markdown from 'markdown-to-jsx';
 import {Container} from 'reactstrap';
 import { Card,CardLink, CardText, CardBody,
   CardTitle, Button } from 'reactstrap';
@@ -70,7 +71,10 @@ class Poems extends Component {
                     <CardBody>
                     <CardTitle><b>{name}</b> {this.renderButton(handle)}</CardTitle>
                     <hr/>
-                    <CardText>{body}</CardText>
+                    <CardText>
+                    <Markdown options={{forceInline: true,}}
+                  >{body}</Markdown>
+                    </CardText>
                     <CardLink
                     className="float-right"
                     href={`mailto:disnetjy@gmail.com?Subject=REPORT%20ABUSE 🙅 (We Keep You Save)&body=ID : ${_id} Title : ${name} Body : ${body}`}

@@ -70,7 +70,7 @@ class poemModal extends Component {
             <Form onSubmit={this.onSubmit}>
               <FormGroup>
                 <Label for="poem">Title</Label>
-                <Input
+               <Input
                 type="text"
                 name="name"
                 id="poem"
