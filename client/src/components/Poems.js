@@ -42,7 +42,7 @@ class Poems extends Component {
       template =  
         <div>
           <TransitionGroup>
-            <div className={'lds-ellipsis' + this.state.hide}><div></div><div></div><div></div><div></div></div>
+            <div className={this.state.hide}><img className='load' src="LOAD.gif"/></div>
           </TransitionGroup>
         </div>
       return template;
@@ -54,7 +54,7 @@ class Poems extends Component {
       template =  
       <div>
         <TransitionGroup>
-          <div className={'lds-ellipsis' + this.state.hide}><div></div><div></div><div></div><div></div></div>
+          <div className={this.state.hide}><img className='load' src="LOAD.gif"/></div>
         </TransitionGroup>
       </div>
 

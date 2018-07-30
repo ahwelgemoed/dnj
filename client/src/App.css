@@ -301,8 +301,14 @@ strong{
   font-weight: 700
 }
 .logo{
-  height: 50px;
+  height: 125px;
   text-align: center
+}
+
+.load{
+  height: 200px;
+  text-align: center;
+  /* padding-bottom: 120px; */
 }
 nav {
   display: flex;
@@ -320,7 +326,8 @@ nav {
 }
 a{
   text-decoration: none;
-  color: black
+  color: black;
+  font-family: 'Montserrat', serif;
 }
 .nav-link, .nav-item{
   color: white !important;
