@@ -40,7 +40,7 @@ body {
 
 }
 .disnetjy{
-  font-family: 'Lekton', sans-serif;
+  font-family: 'Lora', sans-serif;
   /* font-weight: 900 !important; */
   color: black !important;
   font-size: 25px;
@@ -49,7 +49,7 @@ body {
 
 }
 .subb{
-  font-family: 'Lekton', sans-serif;
+  font-family: 'Lora', sans-serif;
   font-weight: 900 !important;
   color: white !important;
   background: black;
@@ -65,20 +65,20 @@ mark{
   background: black;
 }
 h3{
-  font-family: 'Eczar', serif;
+  font-family: 'Montserrat', serif;
   text-align: left;
   margin-left: 15px;
   padding-top: 5px;
 }
 p{
-  font-family: 'Eczar', serif;
+  font-family: 'Lora', serif;
   text-align: left;
-  margin-left: 15px;
+  /* margin-left: 15px; */
   padding-top: 5px;
   white-space: pre-line;
 }
 .card-title{
-  font-family: 'Eczar', serif;
+  font-family: 'Montserrat', serif;
   font-weight: 700;
   text-align: left
 }
@@ -147,19 +147,17 @@ p{
 }
 button{
   background: #fefefe;
-  font-family: 'Eczar', serif;
+  font-family: 'Lora', serif;
 }
 .navbar{
-  /* background: #999999; */
-  /* color: white; */
-  border-bottom: 1px solid rgb(161, 161, 161)
+  background: black
 }
 .nav-link{
   /* padding: 0; */
   padding-bottom: 5px;
   font-size: 16px;
   cursor: pointer;
-  font-family: 'Lekton', sans-serif;
+  font-family: 'Lora', sans-serif;
   font-weight: 600;
   text-decoration: none;
 }
@@ -233,13 +231,13 @@ button{
   text-decoration: none
 }
 form{
-  font-family: 'Lekton', sans-serif;
+  font-family: 'Lora', sans-serif;
 }
 #body{
   height: 30vh;
 }
 h1, h2, h3, h4, h5{
-  font-family: 'Eczar', serif;
+  font-family: 'Montserrat', serif;
 }
 .navbar-toggler{
   border: none
@@ -252,12 +250,15 @@ h1, h2, h3, h4, h5{
   margin-left: 0.5em
 }
 .bott{
-  font-family: 'Eczar', serif;
+  font-family: 'Lora', serif;
   font-size: 14px;
   color: lightgray;
   border-top: 1px solid lightgray;
   padding-top: 15px;
   padding-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+  /* flex-direction:  */
 }
 .active {
   color: green;
@@ -280,15 +281,15 @@ h1, h2, h3, h4, h5{
   color: white !important;
 }
 ul li {
-  font-family: 'Eczar', serif;
+  font-family: 'Montserrat', serif;
   text-align: left;
 }
 .btn{
-  font-family: 'Eczar', serif;
+  font-family: 'Montserrat', serif;
 }
 
 .overide{
-  font-family: 'Eczar', serif;
+  font-family: 'Montserrat', serif;
   text-align: left;
   margin-left: 15px;
   padding-top: 5px;
@@ -298,4 +299,47 @@ ul li {
 
 strong{
   font-weight: 700
+}
+.logo{
+  height: 50px;
+  text-align: center
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+.navbar-brand{
+  margin: 0 auto;
+}
+.the-idea p{
+  text-align: center
+}
+.the-idea h5{
+  text-align: center;
+  font-size: 25px
+}
+a{
+  text-decoration: none;
+  color: black
+}
+.nav-link, .nav-item{
+  color: white !important;
+  font-family: 'Montserrat', serif;
+  font-weight: 200;
+  font-size: 16px;
+
+}
+.nav-link-hide{
+  display: none
+}
+
+.navbar-brand{
+  color: white !important;
+  font-family: 'Montserrat', serif;
+  font-weight: 200;
+  font-size: 14px;
+
+}
+.navbar-collapse {
+  flex-grow: 0
 }

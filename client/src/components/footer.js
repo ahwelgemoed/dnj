@@ -1,5 +1,7 @@
 import React from 'react';
-
+import { Container,
+  Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink
+ } from 'reactstrap';
 const footer = () => {
 
 
@@ -7,9 +9,10 @@ const footer = () => {
 
   return (
     <div className="bott">
+
+    <a href="https://github.com/ahwelgemoed"> &copy;   AH Welgemoed {year}</a>
     <div className="lds-heart"><div></div></div>
-    <br/>
-    &copy;   AH Welgemoed {year}
+    <a href="/tandc">Terms and Conditions</a>
     </div>
   );
 };
