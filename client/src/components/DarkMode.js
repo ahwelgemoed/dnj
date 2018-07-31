@@ -5,7 +5,8 @@ import FontAwesome from 'react-fontawesome';
 class DarkMode extends Component {  
   constructor(props) {  
     super(props);
-    this.css = `  
+ 
+ this.css = `  .navbar { background-color: #fefefe; color: #fefefe } 
     html { filter: invert(100%); background: #fefefe; }  
     * { background-color: inherit }
     img:not([src*=".svg"]), video { filter: invert(100%) }`;

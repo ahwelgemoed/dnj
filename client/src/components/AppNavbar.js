@@ -24,18 +24,13 @@ class AppNavbar extends React.Component{
       <div>
       <Navbar dark expand="lg" className="mb-5">
       <Container>
-      <NavLink exact to='/' activeClassName='nav-link-acc' className='nav-link'/>
+     
       <NavbarBrand href="/"><img className='logo' src="logo.png"/> </NavbarBrand>
-      <NavbarToggler onClick={this.toggle} />
-      <Collapse isOpen={this.state.isOpen} navbar>
-      <Nav className="ml-auto" navbar>
-      <NavItem>
+
       <a exact href="http://klyntji.com/" activeClassName='nav-link-acc' className='nav-link'>
-      KLYNTJI
+      <img className='klyn' src="klyn.png"/>
       </a>
-      </NavItem>
-      </Nav>
-      </Collapse>
+
       </Container>
       </Navbar>
     </div>

@@ -11,7 +11,7 @@ const footer = () => {
     <div className="bott">
 
     <a href="https://www.instagram.com/ahwelgemoed"> &copy;   AH Welgemoed {year}</a>
-    <div className="lds-heart"><div></div></div>
+     <img className='foot' src="Foot.png"/>
     <a href="/tandc">Terms and Conditions</a>
     </div>
   );

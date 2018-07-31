@@ -306,9 +306,14 @@ strong{
 }
 
 .load{
-  height: 200px;
+  height: 100px;
   text-align: center;
   /* padding-bottom: 120px; */
+}
+.foot{
+
+  height: 75px;
+  text-align: center;
 }
 nav {
   display: flex;
@@ -324,17 +329,12 @@ nav {
   text-align: center;
   font-size: 25px
 }
-a{
-  text-decoration: none;
-  color: black;
-  font-family: 'Montserrat', serif;
-}
 .nav-link, .nav-item{
   color: white !important;
   font-family: 'Montserrat', serif;
   font-weight: 200;
   font-size: 16px;
-
+  
 }
 .nav-link-hide{
   display: none
@@ -345,8 +345,21 @@ a{
   font-family: 'Montserrat', serif;
   font-weight: 200;
   font-size: 14px;
-
+  
 }
 .navbar-collapse {
   flex-grow: 0
 }
+.klyn{
+  height: 30px;
+}
+@media only screen and (max-width: 600px) {
+  .navbar>.container, .navbar>.container-fluid {
+    display: inline;
+  }
+}
+    a{
+      text-decoration: none;
+      color: black;
+      font-family: 'Montserrat', serif;
+    }
