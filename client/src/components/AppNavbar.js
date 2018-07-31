@@ -28,7 +28,7 @@ class AppNavbar extends React.Component{
       <NavbarBrand href="/"><img className='logo' src="logo.png"/> </NavbarBrand>
 
       <a exact href="http://klyntji.com/" activeClassName='nav-link-acc' className='nav-link'>
-      <img className='klyn' src="klyn.png"/>
+      KLYNTJI	
       </a>
 
       </Container>

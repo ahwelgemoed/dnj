@@ -81,7 +81,7 @@ class Poems extends Component {
                     </CardText>
                     <CardLink
                     className="float-right"
-                    href={`mailto:disnetjy@gmail.com?Subject=REPORT%20ABUSE 🙅 (We Keep You Save)&body=ID : ${_id} Title : ${name} Body : ${body}`}
+                    href={`mailto:disnetjy@gmail.com?Subject=REPORT%20ABUSE 🙅 (We Keep You Safe)&body=ID : ${_id} Title : ${name} Body : ${body}`}
                     target="_top"
                     >Report</CardLink>
                     </CardBody>
