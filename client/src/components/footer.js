@@ -10,11 +10,11 @@ const footer = () => {
   return (
     <div className="bott">
 
-    <a href="https://www.instagram.com/ahwelgemoed"> &copy;   AH Welgemoed {year}</a>
-     <img className='foot' src="Foot.png"/>
-    <a href="/tandc">Terms and Conditions</a>
+    <a target="_blank" href="https://www.instagram.com/ahwelgemoed"> &copy;   AH Welgemoed {year}</a>
+    <a  href="/tandc">Terms and Conditions</a>
     </div>
   );
 };
 
+//  <img className='foot' src="Foot.png"/>
 export default footer;

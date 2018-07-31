@@ -150,7 +150,7 @@ button{
   font-family: 'Lora', serif;
 }
 .navbar{
-  background: black
+  background: black;
 }
 .nav-link{
   /* padding: 0; */
@@ -258,7 +258,11 @@ h1, h2, h3, h4, h5{
   padding-bottom: 10px;
   display: flex;
   justify-content: space-around;
+  color: black;
   /* flex-direction:  */
+}
+.bott a{
+  color: black;
 }
 .active {
   color: green;
@@ -275,11 +279,6 @@ h1, h2, h3, h4, h5{
   font-weight: 600;
 }
 
-.nav-link-acc{
-  font-weight: 600;
-  background: black;
-  color: white !important;
-}
 ul li {
   font-family: 'Montserrat', serif;
   text-align: left;
@@ -330,14 +329,11 @@ nav {
   font-size: 25px
 }
 .nav-link, .nav-item{
-  color: white !important;
+  /* color: white !important; */
   font-family: 'Montserrat', serif;
   font-weight: 200;
   font-size: 16px;
   
-}
-.nav-link-hide{
-  display: none
 }
 
 .navbar-brand{
@@ -358,8 +354,9 @@ nav {
     display: inline;
   }
 }
-    a{
-      text-decoration: none;
-      color: black;
-      font-family: 'Montserrat', serif;
-    }
+.nav-link{
+  color: white
+}
+a, {
+  color: black
+}

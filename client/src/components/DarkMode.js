@@ -6,7 +6,7 @@ class DarkMode extends Component {
   constructor(props) {  
     super(props);
  
- this.css = `  .navbar { background-color: #fefefe; color: #fefefe } 
+ this.css = `.navbar { background: #fefefe; }
     html { filter: invert(100%); background: #fefefe; }  
     * { background-color: inherit }
     img:not([src*=".svg"]), video { filter: invert(100%) }`;
