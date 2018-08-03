@@ -34,11 +34,14 @@ class poemModal extends Component {
   }
   onSubmit = (e) => {
     e.preventDefault();
-    
+    // Removes @ 
+    const hand = this.state.handle;
+    const res = hand.replace("@", "");
+
     const newPoem = {
       name: this.state.name,
       body: this.state.body,
-      handle: this.state.handle,
+      handle: res,
     }
     this.props.addPoem(newPoem);
 
@@ -96,7 +99,7 @@ class poemModal extends Component {
               type="text"
               name="handle"
               id="handle"
-              placeholder="Instagram Handle without @ (Optional)"
+              placeholder="Instagram Handle (Optional)"
               onChange={this.onChange}
               ></Input>
           </FormGroup>
