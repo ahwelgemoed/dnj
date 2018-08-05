@@ -8,12 +8,40 @@ import { connect } from "react-redux";
 import { getPoems , deletePoem} from '../actions/poemActions';
 import PropTypes from 'prop-types';
 import FontAwesome from 'react-fontawesome';
+import domtoimage from 'dom-to-image';
 
 
 class Poems extends Component {
 
   state = {
     hide:''
+  }
+  handleClick = (id, name) => {
+    var Imy = document.getElementById(id);
+    var ImyIm = document.getElementById(id+"img");
+    console.log(ImyIm);
+
+    domtoimage.toPng(Imy)
+    .then(function(dataUrl) {
+    console.log(dataUrl);
+      //window.open(dataUrl);
+      var img = new Image();
+      img.src = dataUrl;
+      // document.getElementById(id).appendChild(img);
+    });
+    domtoimage.toJpeg(document.getElementById(id), { 
+      quality: 1,
+      style: {
+    } })
+    .then(function (dataUrl) {
+        var link = document.createElement('a');
+        link.download = name;
+        link.href = dataUrl;
+        link.click();
+    })
+      .catch(function(error) {
+        console.error('oops, something went wrong!', error);
+      });
   }
 
   renderButton(handle) {
@@ -67,11 +95,13 @@ class Poems extends Component {
     } else{
       template =
       <TransitionGroup className="Poems">
-              {poems.map(({_id, name, body, handle}) => (
-                <CSSTransition key={_id} timeout={1000} classNames="fade">
+      <div class="row">
+      {poems.map(({_id, name, body, handle}) => (
+        <CSSTransition key={_id} timeout={1000} classNames="fade">
+        <div className="col-12">
                   <Card 
-                  className='cards'
-                  style={{ marginBottom: "2rem" }}>
+                  className='cards cardline '
+                  id={_id}>
                     <CardBody>
                     <CardTitle><b>{name}</b> {this.renderButton(handle)}</CardTitle>
                     <hr/>
@@ -79,16 +109,22 @@ class Poems extends Component {
                     <Markdown options={{forceInline: true,}}
                   >{body}</Markdown>
                     </CardText>
+                    </CardBody>
+                    </Card>
                     <CardLink
                     className="float-right"
                     href={`mailto:disnetjy@gmail.com?Subject=REPORT%20ABUSE 🙅 (We Keep You Safe)&body=ID : ${_id} Title : ${name} Body : ${body}`}
                     target="_top"
                     >Report</CardLink>
-                    </CardBody>
-                  </Card>
+                    <CardLink
+                    className="btn-download float-left"
+                    onClick={() => this.handleClick(_id, name)}>
+                      Save as Image
+                    </CardLink>
+                  </div>             
                 </CSSTransition>
               ))}
-             
+              </div>
       </TransitionGroup>
           
           return template;
