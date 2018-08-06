@@ -103,7 +103,7 @@ class Poems extends Component {
                   className='cards cardline '
                   id={_id}>
                     <CardBody>
-                    <CardTitle><b>{name}</b> {this.renderButton(handle)}</CardTitle>
+                    <CardTitle>{name} {this.renderButton(handle)}</CardTitle>
                     <hr/>
                     <CardText>
                     <Markdown options={{forceInline: true,}}
@@ -119,7 +119,7 @@ class Poems extends Component {
                     <CardLink
                     className="btn-download float-left"
                     onClick={() => this.handleClick(_id, name)}>
-                      Save as Image
+                      Save as Image (Beta)
                     </CardLink>
                   </div>             
                 </CSSTransition>
