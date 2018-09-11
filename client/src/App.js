@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import AppNavbar from './components/AppNavbar';
-import { Provider } from 'react-redux';
-import { BrowserRouter, Route, Link, Switch} from 'react-router-dom';
+import { BrowserRouter, Route, Switch} from 'react-router-dom';
 import Terms from './components/Terms';
 import Home from './components/Home';
 import What from './components/What';

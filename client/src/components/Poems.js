@@ -7,7 +7,6 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { connect } from "react-redux";
 import { getPoems , deletePoem} from '../actions/poemActions';
 import PropTypes from 'prop-types';
-import FontAwesome from 'react-fontawesome';
 import domtoimage from 'dom-to-image';
 
 
@@ -65,8 +64,7 @@ class Poems extends Component {
     if (loading === true){
       // console.log("Before")
       // console.log(erie)
-      // console.log(this.state)
-      // this.setState({ hide: '' })
+      // this.setState({ hide: '' })÷
       template =  
         <div>
           <TransitionGroup>
@@ -93,6 +91,8 @@ class Poems extends Component {
       return template;
 
     } else{
+      console.log(this.state)
+
       template =
       <TransitionGroup className="Poems">
       <div class="row">
